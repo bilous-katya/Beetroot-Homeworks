@@ -1,0 +1,703 @@
+{
+  "id": "54115950-7a01-487f-8b5d-bc67699a1809",
+  "version": "2.0",
+  "name": "Make UpProject",
+  "url": "https://makeup.com.ua/ua/",
+  "tests": [{
+    "id": "94043aa1-421b-418d-8b24-87b382d29107",
+    "name": "User can sign up via \"Підписатися\" function",
+    "commands": [{
+      "id": "4b5c3cac-540a-4cd0-aff1-5875ddd58aee",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fa9d1da-8ae4-4468-8820-a6e7d3c3c66c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dffd6bae-e153-4f36-8d63-dcf628c82b1a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1000)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edd1fd75-e89d-4731-9683-17ee255f2cfc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2250)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a871dabc-729b-45e8-9e7e-38af15f578af",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3642)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3326ab8-64de-46de-9d29-795e45674966",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4740)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7114e692-18b3-45a7-a798-9815a1e4a06f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,6068)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3f37080-5402-4745-850e-6dcaac765742",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,7026)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "618c1703-8df0-4429-b1c1-78e7f879ab9b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,8843)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01db8931-fa3f-423e-8456-7b19b0336224",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.footer-input-row .input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fe0d679-0ed2-459c-98c3-ab88c6aca991",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.footer-input-row .input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "bilus@gmail.com"
+    }, {
+      "id": "baae74fb-f04b-401e-a450-55ea12d1442f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-submit",
+      "targets": [
+        ["css=.footer-submit", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c51d3f8a-11bc-4364-b931-c67a9932c7c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popup__window > .popup-close",
+      "targets": [
+        ["css=#popup__window > .popup-close", "css:finder"],
+        ["xpath=//div[@id='popup__window']/div", "xpath:idRelative"],
+        ["xpath=//body/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "882be4df-b07c-483c-af41-92f3056688cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[4]/div/div[2]",
+      "targets": [],
+      "value": "Ви вже підписані на цю розсилку!"
+    }, {
+      "id": "b0b06f11-702e-4151-912c-7a2a484259b8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "35cb612b-f4c5-4dc3-a5dd-eef140da7b1d",
+    "name": "User can add product to \"Favourites\"",
+    "commands": [{
+      "id": "c6a7860c-f0ba-4d94-bb01-5f96f716562f",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46660db7-1a98-4fa8-8935-9c8db43408eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9d83404-bef3-49c3-a315-8478adc9b670",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c97c9132-6273-4908-b72a-340555aeaf89",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "eclat"
+    }, {
+      "id": "c42551a0-8f11-44d2-bea5-11a5bc7b0d38",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "43f3e9c1-4144-4d00-af77-a23bdb92172f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1592)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd151e10-0f1c-4c47-87da-8bd4be8a3589",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .simple-slider-list__image",
+      "targets": [
+        ["css=.active .simple-slider-list__image", "css:finder"],
+        ["xpath=//a[contains(@href, '/ua/product/3173/')]", "xpath:href"],
+        ["xpath=//div[5]/ul/li/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e4c6aa-c45e-449c-8a31-9dd423c1b2d7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,607)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bed5f55-d448-48e7-9713-6c42c43bb5f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,884)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2260f4d-2534-4b82-bc52-843ea3d30eb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product__to-favourite:nth-child(2)",
+      "targets": [
+        ["css=.product__to-favourite:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b71cf5c-f966-4b56-8e32-8b1581f1a585",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[7]/div/div[2]/div/div[2]/div[2]",
+      "targets": [],
+      "value": "СЛІДКУВАТИ ЗА ЦІНОЮ"
+    }, {
+      "id": "ace70955-2010-465d-bd5e-4101a7bc3cbb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "140d8a81-8132-4b81-9be2-cd59d6929836",
+    "name": "User can find product via \"Search\"",
+    "commands": [{
+      "id": "f6a3e2a2-7aad-43a0-bc3f-9383f8bae5e0",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "051bfd3e-fb34-4708-8c45-15ac9d5fc3e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d990e3a-53c4-4425-8b8a-4048495f1fe7",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "055b9999-2d67-42f3-a0a2-ab5b38e04ff1",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "eclat"
+    }, {
+      "id": "51d9025a-4226-41b2-bac0-fbabed07eeb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button",
+      "targets": [
+        ["css=.search-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "074524d6-586f-4c2f-a3a8-781cbf8fc634",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1610)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87eea8e6-f1ed-4229-b387-3fd018351866",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div/div[2]/div[1]/div/div[5]/ul/li[2]/div[2]/div[1]/a",
+      "targets": [],
+      "value": "LANVIN ECLAT D`ARPEGE"
+    }, {
+      "id": "a6d7d73d-dc4e-48a8-9aa3-daaa953b03a8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "27592d58-f2c0-4f0d-8f87-7b5911023bf8",
+    "name": "User can send a letter via \"Написати нам лист\"",
+    "commands": [{
+      "id": "c0745609-0e51-479a-b70e-2895737def5b",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99f49d09-29ec-4a34-8c2d-4a6bedd4b7e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81f5308d-3790-405e-99e5-a9be8213a42f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4056.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07045995-c091-4e00-9cdf-adb967e913dc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,7688)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fef35ac4-4e61-4efb-bd7f-3b57cf011105",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,9306.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c2320ac-523a-44cc-ba60-896f1164ab69",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,12054.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dec7359a-b6a9-4fc9-9e80-dba5c3d8edf2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=написати нам лист",
+      "targets": [
+        ["linkText=написати нам лист", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'написати нам лист')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ua/feedback/')])[2]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'написати нам лист')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15110378-108a-4ae7-a051-0f845ca87eb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-select__value-wrap",
+      "targets": [
+        ["css=.custom-select__value-wrap", "css:finder"],
+        ["xpath=//form[@id='form-feedback']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8af664d-0494-486a-8678-6ce14da00822",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-select__item:nth-child(2)",
+      "targets": [
+        ["css=.custom-select__item:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='form-feedback']/div/div/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b882809a-d90a-47b6-a152-deee15d55d46",
+      "comment": "",
+      "command": "select",
+      "target": "name=department_id",
+      "targets": [],
+      "value": "label=Відділ з роботи з клієнтами"
+    }, {
+      "id": "612b4217-0f0a-4564-94dd-90c3dc9b715f",
+      "comment": "",
+      "command": "click",
+      "target": "id=contacts-name",
+      "targets": [
+        ["id=contacts-name", "id"],
+        ["name=name", "name"],
+        ["css=#contacts-name", "css:finder"],
+        ["xpath=//input[@id='contacts-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45ab242c-e397-4f2c-922b-b77c95bf8dc3",
+      "comment": "",
+      "command": "type",
+      "target": "id=contacts-name",
+      "targets": [
+        ["id=contacts-name", "id"],
+        ["name=name", "name"],
+        ["css=#contacts-name", "css:finder"],
+        ["xpath=//input[@id='contacts-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "сисиси"
+    }, {
+      "id": "2f63ce8f-9da2-4717-a011-41598229cded",
+      "comment": "",
+      "command": "click",
+      "target": "id=contacts-email",
+      "targets": [
+        ["id=contacts-email", "id"],
+        ["name=email", "name"],
+        ["css=#contacts-email", "css:finder"],
+        ["xpath=//input[@id='contacts-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c41b47c8-8450-4bb1-93c4-0a0b4ecbc171",
+      "comment": "",
+      "command": "type",
+      "target": "id=contacts-email",
+      "targets": [
+        ["id=contacts-email", "id"],
+        ["name=email", "name"],
+        ["css=#contacts-email", "css:finder"],
+        ["xpath=//input[@id='contacts-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "cfscsc@gmail.com"
+    }, {
+      "id": "27700cb5-21b7-4e7a-807f-016c1a0a4f70",
+      "comment": "",
+      "command": "click",
+      "target": "id=contacts-subj",
+      "targets": [
+        ["id=contacts-subj", "id"],
+        ["name=subject", "name"],
+        ["css=#contacts-subj", "css:finder"],
+        ["xpath=//input[@id='contacts-subj']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f5b93d4-3cad-4dce-b766-cdc116b828a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=contacts-subj",
+      "targets": [
+        ["id=contacts-subj", "id"],
+        ["name=subject", "name"],
+        ["css=#contacts-subj", "css:finder"],
+        ["xpath=//input[@id='contacts-subj']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffdb0871-9a3f-46e3-bd2b-bb062ef04a44",
+      "comment": "",
+      "command": "type",
+      "target": "id=contacts-subj",
+      "targets": [
+        ["id=contacts-subj", "id"],
+        ["name=subject", "name"],
+        ["css=#contacts-subj", "css:finder"],
+        ["xpath=//input[@id='contacts-subj']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "fwfw"
+    }, {
+      "id": "57764eb4-d498-4ab0-889e-88539fb3af00",
+      "comment": "",
+      "command": "click",
+      "target": "id=contacts-message",
+      "targets": [
+        ["id=contacts-message", "id"],
+        ["name=message", "name"],
+        ["css=#contacts-message", "css:finder"],
+        ["xpath=//textarea[@id='contacts-message']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[5]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec6aa12c-ea76-4ca9-b094-532df510f3b7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=contacts-message",
+      "targets": [
+        ["id=contacts-message", "id"],
+        ["name=message", "name"],
+        ["css=#contacts-message", "css:finder"],
+        ["xpath=//textarea[@id='contacts-message']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[5]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3f8e80c-9211-43b6-a36e-a8799a894864",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=contacts-message",
+      "targets": [
+        ["id=contacts-message", "id"],
+        ["name=message", "name"],
+        ["css=#contacts-message", "css:finder"],
+        ["xpath=//textarea[@id='contacts-message']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[5]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61ce8ed-9dff-4904-b58f-1b0a6250bdda",
+      "comment": "",
+      "command": "type",
+      "target": "id=contacts-message",
+      "targets": [
+        ["id=contacts-message", "id"],
+        ["name=message", "name"],
+        ["css=#contacts-message", "css:finder"],
+        ["xpath=//textarea[@id='contacts-message']", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[5]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "wfwfwf"
+    }, {
+      "id": "b6ad1d2a-6cdb-4726-92d0-27eef2dc52f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-row:nth-child(8) > .button",
+      "targets": [
+        ["css=.input-row:nth-child(8) > .button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='form-feedback']/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8ffe3c2-5374-4c72-b76a-99cae027e500",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[5]/div/div[2]",
+      "targets": [],
+      "value": "Дякуємо, ваше повідомлення надіслано!"
+    }, {
+      "id": "b3138106-6079-490a-9905-3128d9cc275e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9597f6f1-a9f7-4111-b634-20bb66c7f448",
+    "name": "User can login in with all valid data",
+    "commands": [{
+      "id": "9a997c9c-9b03-470a-8c46-f6e0349eedf5",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30ad1f74-3a0c-4a2b-9c7f-846ff180916d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1284x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38487478-db57-45d8-b6c9-fe7bbdc04c6d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body/div[1]/div[1]/header/div[1]/div/div[3]/div",
+      "targets": [
+        ["css=.header-top > .layout > div > div", "css:finder"],
+        ["xpath=//header/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc01e8d-060a-469a-8907-48590e6a5f7b",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(2) .input", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80047ba6-8476-4f8a-acaa-9934b95578f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b37a63f-ec9b-4464-8246-f4975f38f42e",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae6a64d-1796-4916-8b15-57a09a89fb78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-row:nth-child(4) > .button",
+      "targets": [
+        ["css=.input-row:nth-child(4) > .button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "398656e7-8ad9-42c6-a272-180c2d90e3e0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,722)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf97c870-1467-435b-9032-980a2f463cf5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[1]/div[1]/header/div[1]/div/div[3]/a",
+      "targets": [],
+      "value": "Кабінет"
+    }, {
+      "id": "13adbb8e-f756-408c-86b9-5936ec67f43a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd3a26dc-bf2e-43b7-8a73-34eaefb8a928",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.nike.com/", "https://makeup.com.ua/ua/"],
+  "plugins": []
+}
